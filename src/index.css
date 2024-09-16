@@ -24,9 +24,62 @@ a.active hr{
     display: none;
   }
   
+  
   @media (max-width:640px) {
     a:active{
         background-color: black;
         color: white;
     }
+    .con{
+      display: flex;
+      position: relative;
+      gap: 40px;
+      right: 100px;
+    }
+    .img{
+      
+    }
   }
+
+  @media (max-width:500px) {
+    .con{
+    margin-left: -100px;
+    }
+   
+  }
+
+  @media (max-width:400px) {
+    .con{
+    margin-left: -190px;
+    }
+   
+  }
+
+  @media (min-width:345px) {
+    .con{
+     
+    }
+    .img{
+     margin-left: -50px;
+    }
+   
+  }
+
+  @media (max-width:1075px) {
+   
+    .con{
+     display: flex;
+     gap: 5em;
+    }
+    
+    .con input{
+
+    }
+    
+  }
+
+
+  
+
+  
+  

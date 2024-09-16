@@ -60,8 +60,12 @@ const Cart = () => {
                     </p>
                   </div>
                 </div>
-                <input onChange={(e)=> e.target.value === "" || e.target.value === '0' ? null : updateQuantity(item._id,item.size,Number(e.target.value))} type="number" className="border max-w-10   sm:max-w-20  px-1 sm:px-2 py-1 mt-10 ml-72"   min={1} max={10}  defaultValue={item.quantity}   />
-                <img onClick={()=>updateQuantity(item._id,item.size,0)} className="w-5 sm::w-5 cursor-pointer mt-12 ml-56" src={assets.bin_icon} alt="" />
+                <div className="flex con ">
+                <input onChange={(e)=> e.target.value === "" || e.target.value === '0' ? null : updateQuantity(item._id,item.size,Number(e.target.value))} type="number" className="border name max-w-10   sm:max-w-20  px-1 sm:px-2 py-1 mt-10 ml-[300px] "   min={1} max={10}  defaultValue={item.quantity}   />
+                
+                <img onClick={()=>updateQuantity(item._id,item.size,0)} className="w-5 icon sm:w-5 cursor-pointer mt-12 img " src={assets.bin_icon} alt="" />
+                
+                </div>
               </div>
             </div>
           );
