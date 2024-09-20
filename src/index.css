@@ -56,10 +56,7 @@ a.active hr{
   }
 
   @media (min-width:345px) {
-    .con{
-     
-    }
-    .img{
+      .img{
      margin-left: -50px;
     }
    
